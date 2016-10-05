@@ -13,7 +13,7 @@ header, nav, main, aside, article, section
 {
 	font-family: headTitle;
 	color: rgba(0, 0, 0, 0.2);
-	src: url(flipside.ttf);
+	src: url(../flipside.ttf);
 }
 
 header, nav
