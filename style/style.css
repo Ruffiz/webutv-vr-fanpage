@@ -126,6 +126,17 @@ main
     to   { opacity: 1; }
 }
 
+article
+{
+	width: 100%;
+	padding: inherit;
+}
+
+article img
+{
+	width: 100%;	
+}
+
 aside
 {
 	position: absolute;
