@@ -31,7 +31,8 @@ h1
 	text-align: center;
 }
 
-.search-form .form-group {
+.search-form .form-group 
+{
   float: right;
   transition: all 0.35s, border-radius 0s;
   width: 2rem;
@@ -43,7 +44,8 @@ h1
   margin: 5px;
   
 }
-.search-form .form-group input.form-control {
+.search-form .form-group input.form-control 
+{
   padding-right: 20px;
   border: 0 none;
   background: transparent;
@@ -51,26 +53,32 @@ h1
   display:block;
   
 }
-.search-form .form-group input.form-control::-webkit-input-placeholder {
+.search-form .form-group input.form-control::-webkit-input-placeholder 
+{
   display: none;
 }
-.search-form .form-group input.form-control:-moz-placeholder {
+.search-form .form-group input.form-control:-moz-placeholder 
+{
   /* Firefox 18- */
   display: none;
 }
-.search-form .form-group input.form-control::-moz-placeholder {
+.search-form .form-group input.form-control::-moz-placeholder 
+{
   /* Firefox 19+ */
   display: none;
 }
-.search-form .form-group input.form-control:-ms-input-placeholder {
+.search-form .form-group input.form-control:-ms-input-placeholder 
+{
   display: none;
 }
 .search-form .form-group:hover,
-.search-form .form-group.hover {
+.search-form .form-group.hover 
+{
   width: 65%;
   border-radius: 4px 25px 25px 4px;
 }
-.search-form .form-group span.form-control-feedback {
+.search-form .form-group span.form-control-feedback 
+{
   position: absolute;
   top: -1px;
   right: -2px;
@@ -129,7 +137,7 @@ main
 article
 {
 	width: 100%;
-	padding: inherit;
+	padding: 0;
 }
 
 article img
