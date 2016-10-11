@@ -22,12 +22,12 @@ main,
 menu,
 nav,
 section,
-summary 
+summary
 {
   display: block;
 }
 
-video 
+video
 {
   display: inline-block;
   vertical-align: baseline;
@@ -73,7 +73,7 @@ h1
 	padding: 2em;
 }
 
-.mobile /* skal være synlig under en viss skjermbredde, sett til none over eks 800px */
+.mobile /* skal vï¿½re synlig under en viss skjermbredde, sett til none over eks 800px */
 {
 	display: block;
 }
@@ -90,39 +90,65 @@ h1
 	background-size: 100%;
 }
 
-#navbar-collapse /* skal ikke være synlig for mobil */
-{
+#navbar-collapse /* skal ikke vï¿½re synlig for mobil */
+/*{
 	display: none;
+}*/
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-ul
-{
-	list-style: none;
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.9s;
+    font-size: 17px;
 }
 
-li
-{
-	display: inline-block;
-	float: left;
-}
+/*@media screen and (max-width:680px) {*/
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+/*}*/
 
-a 
-{
-  background-color: transparent;
-  display: block;
-}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+/*@media screen and (max-width:680px) {*/
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+/*}*/
 
-a:active, a:hover 
-{
-  outline: 0;
-}
 
-input 
+input
 {
 	outline: none;
 }
 
-input[type=search] 
+input[type=search]
 {
 	float: right;
 	-webkit-appearance: textfield;
@@ -131,12 +157,12 @@ input[type=search]
 	font-size: 100%;
 }
 
-input::-webkit-search-decoration, input::-webkit-search-cancel-button 
+input::-webkit-search-decoration, input::-webkit-search-cancel-button
 {
-	display: none; 
+	display: none;
 }
 
-#search input[type=search] 
+#search input[type=search]
 {
 	width: 15px;
 	color: transparent;
@@ -144,17 +170,17 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
-	
+
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
 	border-radius: 10em;
-	
+
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
-#search input[type=search]:focus 
+#search input[type=search]:focus
 {
 	width: 130px;
 	color: rgb(0, 0, 0);
@@ -163,12 +189,12 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	padding-left: 32px;
 }
 
-#search input:-moz-placeholder 
+#search input:-moz-placeholder
 {
 	color: transparent;
 }
 
-#search input::-webkit-input-placeholder 
+#search input::-webkit-input-placeholder
 {
 	color: transparent;
 }
