@@ -41,11 +41,6 @@ header
 	background-color: rgb(26, 26, 26);
 }
 
-#page-header
-{
-	padding: 1em;
-}
-
 @font-face
 {
 	font-family: headTitle;
@@ -53,14 +48,22 @@ header
 	src: url(fonts/flipside.ttf);
 }
 
+@font-face
+{
+	font-family: headPage;
+	color: color: rgb(38, 38 , 38);
+	src: url(fonts/ABeeZee-Regular.ttf);
+}
+
 h1
 {
 	font-size: 2em;
 	font-family: headTitle;
 	text-transform: uppercase;
+	text-align: center;
 }
 
-.navbar
+nav
 {
 	clear: both;
 	position: relative;
@@ -68,7 +71,7 @@ h1
 	background-color: rgb(26, 26, 26);
 }
 
-.navbar .container
+nav .container
 {
 	padding: 2em;
 }
@@ -76,11 +79,13 @@ h1
 .mobile /* skal være synlig under en viss skjermbredde, sett til none over eks 800px */
 {
 	display: block;
+	margin-top: -1em;
+	margin-left: -1em;
 }
 
 #navbar-toggle /* hamburger menyknapp */
 {
-	position: fixed;
+	position: relative;
 	float: left;
 	width: 34px;
 	height: 34px;
@@ -117,27 +122,24 @@ a:active, a:hover
   outline: 0;
 }
 
-input 
+#search input 
 {
 	outline: none;
+	margin-right: -1em;
 }
 
-input[type=search] 
-{
-	float: right;
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-
-input::-webkit-search-decoration, input::-webkit-search-cancel-button 
+#search input::-webkit-search-decoration, input::-webkit-search-cancel-button 
 {
 	display: none; 
 }
 
 #search input[type=search] 
 {
+	float: right;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
 	width: 15px;
 	color: transparent;
 	cursor: pointer;
@@ -175,19 +177,23 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 
 main
 {
+	clear: both;
 	width: 100%;
 	color: rgb(38, 38 , 38);
 }
 
-.container
+main .container
 {
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
 }
 
-.container h2
+main h2
 {
 	font-size: 1.5em;
 	text-align: center;
+	font-family: headPage;
 }
 
 article
@@ -218,7 +224,7 @@ aside
 
 footer
 {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	bottom: 0;
 	background-color: rgb(26, 26, 26);
