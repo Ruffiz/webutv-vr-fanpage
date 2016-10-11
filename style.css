@@ -1,0 +1,233 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	font-family: verdana;
+	font-size: 1em;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary 
+{
+  display: block;
+}
+
+video 
+{
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+header
+{
+	position: relative;
+	width: 100%;
+	top: 0;
+	background-color: rgb(26, 26, 26);
+}
+
+#page-header
+{
+	padding: 1em;
+}
+
+@font-face
+{
+	font-family: headTitle;
+	color: rgba(255, 255, 255, 0.2);
+	src: url(fonts/flipside.ttf);
+}
+
+h1
+{
+	font-size: 2em;
+	font-family: headTitle;
+	text-transform: uppercase;
+}
+
+.navbar
+{
+	clear: both;
+	position: relative;
+	width: 100%;
+	background-color: rgb(26, 26, 26);
+}
+
+.navbar .container
+{
+	padding: 2em;
+}
+
+.mobile /* skal være synlig under en viss skjermbredde, sett til none over eks 800px */
+{
+	display: block;
+}
+
+#navbar-toggle /* hamburger menyknapp */
+{
+	position: fixed;
+	float: left;
+	width: 34px;
+	height: 34px;
+	background: url(icons/menu.png) center no-repeat;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 6px;
+	background-size: 100%;
+}
+
+#navbar-collapse /* skal ikke være synlig for mobil */
+{
+	display: none;
+}
+
+ul
+{
+	list-style: none;
+}
+
+li
+{
+	display: inline-block;
+	float: left;
+}
+
+a 
+{
+  background-color: transparent;
+  display: block;
+}
+
+a:active, a:hover 
+{
+  outline: 0;
+}
+
+input 
+{
+	outline: none;
+}
+
+input[type=search] 
+{
+	float: right;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button 
+{
+	display: none; 
+}
+
+#search input[type=search] 
+{
+	width: 15px;
+	color: transparent;
+	cursor: pointer;
+	background: url(icons/search-icon.png) no-repeat 9px center;
+	border: solid 1px rgb(255, 255, 255);
+	padding: 9px 10px 9px 13px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+#search input[type=search]:focus 
+{
+	width: 130px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	cursor: auto;
+	padding-left: 32px;
+}
+
+#search input:-moz-placeholder 
+{
+	color: transparent;
+}
+
+#search input::-webkit-input-placeholder 
+{
+	color: transparent;
+}
+
+main
+{
+	width: 100%;
+	color: rgb(38, 38 , 38);
+}
+
+.container
+{
+	padding: 1em;
+}
+
+.container h2
+{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+article
+{
+	margin: 0.5em;
+	font-size: 0.8em;
+	font-color: rgb(255,255,255);
+}
+
+article h2
+{
+	font-color: inherit;
+}
+
+aside
+{
+	width: 100%;
+	background-color: rgb(26, 26, 26);
+}
+
+#rss
+{
+	padding: 1em;
+	font-size: 0.65em;
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+}
+
+footer
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: rgb(26, 26, 26);
+}
+
+#footercontent
+{
+	padding: 1em;
+	font-size: 0.65em;
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+}
