@@ -16,7 +16,16 @@
 
     <!-- Custom styles for this template -->
 <!--    <link href="" rel="stylesheet">-->
-
+  <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+  </script>
   </head>
 
   <body>
@@ -27,6 +36,7 @@
 	</header>
     <nav>
 		<div class="container">
+<<<<<<< HEAD
 	  
 			<div class="mobile">
 				<button type="button" id="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -50,8 +60,38 @@
 			</ul>
 			</div>
 			<form id="search">
+=======
+
+			<!-- <div class="mobile">
+
+			</div> -->
+
+			<!-- <div id="navbar-collapse"> -->
+      <form id="search">
+>>>>>>> nav1
 				<input type="search" name="searchfield">
 			</form>
+
+			<ul class="topnav" id="myTopnav">
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href=#>Demoer</a>
+					<ul>
+						<li><a href="gaming.html">Gaming</a></li>
+						<li><a href="forskning.html">Forskning og læring</a></li>
+						<li><a href="simulering">Simulering</a></li>
+						<li><a href="film.html">Film</a></li>
+						<li><a href="annet.html">Annet</a></li>
+					</ul>
+				</li>
+				<li><a href="ressurser.html">Ressurser</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+
+			</ul>
+			<!-- </div> -->
+
 		</div>
     </nav>
 
@@ -85,13 +125,13 @@
       </div>
 
     </main>
-	
+
 	<aside>
 		<div id="rss">
 			<p>RSS feed</p>
 		</div>
 	</aside>
-	
+
 	<footer>
 		<div id="footercontent">
 			Copyright 2016

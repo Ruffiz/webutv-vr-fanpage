@@ -22,12 +22,12 @@ main,
 menu,
 nav,
 section,
-summary 
+summary
 {
   display: block;
 }
 
-video 
+video
 {
   display: inline-block;
   vertical-align: baseline;
@@ -76,7 +76,7 @@ nav .container
 	padding: 2em;
 }
 
-.mobile /* skal være synlig under en viss skjermbredde, sett til none over eks 800px */
+.mobile /* skal vï¿½re synlig under en viss skjermbredde, sett til none over eks 800px */
 {
 	display: block;
 	margin-top: -1em;
@@ -95,9 +95,10 @@ nav .container
 	background-size: 100%;
 }
 
-#navbar-collapse /* skal ikke være synlig for mobil */
-{
+#navbar-collapse /* skal ikke vï¿½re synlig for mobil */
+/*{
 	display: none;
+<<<<<<< HEAD
 }
 
 ul
@@ -123,17 +124,83 @@ a:active, a:hover
 }
 
 #search input 
+=======
+}*/
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.9s;
+    font-size: 17px;
+}
+
+/*@media screen and (max-width:680px) {*/
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+/*}*/
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+/*@media screen and (max-width:680px) {*/
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+/*}*/
+
+
+input
+>>>>>>> nav1
 {
 	outline: none;
 	margin-right: -1em;
 }
 
+<<<<<<< HEAD
 #search input::-webkit-search-decoration, input::-webkit-search-cancel-button 
+=======
+input[type=search]
 {
-	display: none; 
+	float: right;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
 }
 
-#search input[type=search] 
+input::-webkit-search-decoration, input::-webkit-search-cancel-button
+>>>>>>> nav1
+{
+	display: none;
+}
+
+#search input[type=search]
 {
 	float: right;
 	-webkit-appearance: textfield;
@@ -146,17 +213,17 @@ a:active, a:hover
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
-	
+
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
 	border-radius: 10em;
-	
+
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
-#search input[type=search]:focus 
+#search input[type=search]:focus
 {
 	width: 130px;
 	color: rgb(0, 0, 0);
@@ -165,12 +232,12 @@ a:active, a:hover
 	padding-left: 32px;
 }
 
-#search input:-moz-placeholder 
+#search input:-moz-placeholder
 {
 	color: transparent;
 }
 
-#search input::-webkit-input-placeholder 
+#search input::-webkit-input-placeholder
 {
 	color: transparent;
 }
