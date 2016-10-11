@@ -89,7 +89,7 @@ nav .container
 	float: left;
 	width: 34px;
 	height: 34px;
-	background: url(icons/menu.png) center no-repeat;
+	background: url(icons/menu-alt.png) center no-repeat;
 	border: 1px solid rgb(255, 255, 255);
 	border-radius: 6px;
 	background-size: 100%;
@@ -212,6 +212,18 @@ aside
 {
 	width: 100%;
 	background-color: rgb(26, 26, 26);
+}
+
+figure > img /* alle img tagger under figure skal være fullbredde på mobil */
+{
+	width: 100%;
+}
+
+aside div figure img /* alle img tagger i aside skal være ikoner */
+{
+	width: 1.5em;
+	height: 1.5em;
+	margin: 5px;
 }
 
 #rss
