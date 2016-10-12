@@ -275,15 +275,16 @@ article h2
 	font-color: inherit;
 }
 
+figure > img /* alle img tagger under figure skal være fullbredde på mobil */
+{
+	width: 100%;
+}
+
 aside
 {
 	width: 100%;
 	background-color: rgb(26, 26, 26);
-}
-
-figure > img /* alle img tagger under figure skal være fullbredde på mobil */
-{
-	width: 100%;
+	line-heigh: 1em;
 }
 
 aside div figure img /* alle img tagger i aside skal være ikoner */
@@ -291,6 +292,17 @@ aside div figure img /* alle img tagger i aside skal være ikoner */
 	width: 1.5em;
 	height: 1.5em;
 	margin: 5px;
+	float: left;
+	border: 1px solid black;
+}
+
+section > blockquote
+{
+	background-color: transparent;
+	padding: 0.5em;
+	font-style: italic;
+	font-size: 0.5rem;
+	color: rgb(255, 255, 255);
 }
 
 #rss
@@ -303,13 +315,14 @@ aside div figure img /* alle img tagger i aside skal være ikoner */
 
 footer
 {
+	clear: both;
 	position: relative;
 	width: 100%;
 	bottom: 0;
 	background-color: rgb(26, 26, 26);
 }
 
-#footercontent
+footer .container
 {
 	padding: 1em;
 	font-size: 0.65em;
