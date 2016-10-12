@@ -33,6 +33,11 @@ video
   vertical-align: baseline;
 }
 
+.container
+{
+	padding: 1em;
+}
+
 header
 {
 	position: relative;
@@ -61,6 +66,7 @@ h1
 	font-family: headTitle;
 	text-transform: uppercase;
 	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
 }
 
 nav
@@ -271,7 +277,7 @@ article h2
 	font-color: inherit;
 }
 
-figure > img /* alle img tagger under figure skal være fullbredde på mobil */
+figure > img /* alle img tagger under figure skal vï¿½re fullbredde pï¿½ mobil */
 {
 	width: 100%;
 }
@@ -282,7 +288,7 @@ aside
 	background-color: rgb(26, 26, 26);
 }
 
-aside div figure img /* alle img tagger i aside skal være ikoner */
+aside div figure img /* alle img tagger i aside skal vï¿½re ikoner */
 {
 	width: 1.5em;
 	height: 1.5em;
@@ -303,7 +309,7 @@ section > blockquote
 	padding: 0.5em;
 	font-style: italic;
 	text-align: right;
-	line-height: 2em;
+	line-height: 1em;
 }
 
 #rss
