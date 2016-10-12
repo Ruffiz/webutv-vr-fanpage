@@ -49,14 +49,13 @@ header
 @font-face
 {
 	font-family: headTitle;
-	color: rgba(255, 255, 255, 0.2);
 	src: url(fonts/flipside.ttf);
 }
 
 @font-face
 {
 	font-family: headPage;
-	color: color: rgb(38, 38 , 38);
+	color: rgb(38, 38, 38);
 	src: url(fonts/ABeeZee-Regular.ttf);
 }
 
@@ -207,12 +206,12 @@ article
 {
 	margin: 0.5em;
 	font-size: 0.8em;
-	font-color: rgb(255,255,255);
+	color: rgb(255,255,255);
 }
 
 article h2
 {
-	font-color: inherit;
+	color: inherit;
 }
 
 figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil */
@@ -286,20 +285,20 @@ footer p
 
 @media only screen and (min-width: 768px)
 {
-	
+
 }
 
 @media only screen and (min-width: 992px)
 {
-	
+
 }
 
 @media only screen and (min-width: 1200px)
 {
-	
+
 }
 
 @media print
 {
-	
+
 }
