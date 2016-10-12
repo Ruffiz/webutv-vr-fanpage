@@ -176,15 +176,12 @@ ul.topnav li a {
 
 
 input
->>>>>>> nav1
 {
 	outline: none;
 	margin-right: -1em;
 }
 
-<<<<<<< HEAD
 #search input::-webkit-search-decoration, input::-webkit-search-cancel-button 
-=======
 input[type=search]
 {
 	float: right;
@@ -195,7 +192,6 @@ input[type=search]
 }
 
 input::-webkit-search-decoration, input::-webkit-search-cancel-button
->>>>>>> nav1
 {
 	display: none;
 }
@@ -284,7 +280,6 @@ aside
 {
 	width: 100%;
 	background-color: rgb(26, 26, 26);
-	line-heigh: 1em;
 }
 
 aside div figure img /* alle img tagger i aside skal være ikoner */
@@ -296,13 +291,19 @@ aside div figure img /* alle img tagger i aside skal være ikoner */
 	border: 1px solid black;
 }
 
-section > blockquote
+aside section
 {
 	background-color: transparent;
-	padding: 0.5em;
-	font-style: italic;
 	font-size: 0.5rem;
 	color: rgb(255, 255, 255);
+}
+
+section > blockquote
+{
+	padding: 0.5em;
+	font-style: italic;
+	text-align: right;
+	line-height: 2em;
 }
 
 #rss
@@ -322,7 +323,7 @@ footer
 	background-color: rgb(26, 26, 26);
 }
 
-footer .container
+footer p
 {
 	padding: 1em;
 	font-size: 0.65em;
