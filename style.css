@@ -228,7 +228,7 @@ aside div figure img /* alle img tagger i aside skal v�re ikoner */
 {
 	width: 1.5em;
 	height: 1.5em;
-	margin: 5px;
+	margin: -5px 5px 5px 5px;
 	float: left;
 	border: 1px solid black;
 }
@@ -271,4 +271,33 @@ footer p
 	font-size: 0.65em;
 	color: rgb(255, 255, 255);
 	background-color: transparent;
+}
+
+@media only screen and (min-width: 580px)
+{
+	aside .container
+	{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	
+}
+
+@media only screen and (min-width: 992px)
+{
+	
+}
+
+@media only screen and (min-width: 1200px)
+{
+	
+}
+
+@media print
+{
+	
 }
