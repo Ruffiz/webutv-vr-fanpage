@@ -247,6 +247,11 @@ aside div figure img /* alle img tagger i aside skal v�re ikoner */
 	border: 1px solid black;
 }
 
+aside div p
+{
+	display: none;
+}
+
 aside section
 {
 	background-color: transparent;
@@ -301,11 +306,66 @@ footer p
 
 }
 
+/* laptop */
 @media only screen and (min-width: 992px)
 {
+	main
+	{
+		width: 100%;
+	}
+	
+	main .container
+	{
+		float: left;
+		width: 730px;
+		border-left: 1px dotted black;
+		border-right:  1px dotted black;
+		margin: 0 auto;
+	}
+	
+	aside 
+	{
+		width: 200px;
+		float: left;
+		background-color: rgb(211,211,211);
+		margin: 0px 10px 10px 10px;
+	}
+	
+	aside .container
+	{
+		border: none;
+	}
+	
+		aside section
+	{
+		background-color: transparent;
+		font-size: 0.5rem;
+		color: rgb(0, 0, 0);
+	}
+	
+	aside div figure img
+	{
+		clear: both;
+	}
+	
+	aside div p
+	{
+		display: block;
+		line-height: 2.5em;
+		font-size: 0.75em;
+	}
+	
+	aside div blockquote
+	{
+		width: 22%;
+		clear: both;
+		text-align: left;
+		font-size: 1.3em;
+	}
 
 }
 
+/* desktop */
 @media only screen and (min-width: 1200px)
 {
 
