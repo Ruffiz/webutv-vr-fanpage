@@ -333,10 +333,12 @@ footer p
 	
 	aside .container
 	{
+		width: auto;
 		border: none;
+		margin: 0 auto;
 	}
 	
-		aside section
+	aside section
 	{
 		background-color: transparent;
 		font-size: 0.5rem;
@@ -364,7 +366,6 @@ footer p
 	
 	aside div blockquote
 	{
-		width: 22%;
 		clear: both;
 		text-align: left;
 		font-size: 1.3em;
