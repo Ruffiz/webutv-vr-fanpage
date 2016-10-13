@@ -72,49 +72,62 @@ h1
 nav
 {
 	background-color: rgb(26, 26, 26);
+	padding: 1em;
 }
 
 /* Hamburger ikonet*/
-  .icon a{
-		text-decoration: none;
-		color: #f2f2f2;
-		/*font-size: 1em;*/
-    /*display: inline-block;*/
-		font-size: 2em;
-		position: relative;
-		border: 1px solid white;
-		border-radius: 0.2em;
-		padding: 0.1em 0.2em;
-  }
-
-/* Hovedmeny elementer*/
-ul.topnav li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 1em;
-		padding:0.3em;
-		text-align: center;
+.icon a{
+	text-decoration: none;
+	color: #f2f2f2;
+	font-size: 2em;
+	position: relative;
+	border: 1px solid white;
+	border-radius: 0.2em;
+	padding: 0.1em 0.2em;
 }
 
-
 /* Desktop meny skjules*/
-  ul.topnav li {
-		display: none;
-	}
+ul.topnav li {
+	display: none;
+}
 
+/* Dropdown menyen */
+ul.topnav.responsive {
+	position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
+	background: rgb(26, 26, 26); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgb(90, 90, 90), rgb(26, 26, 26)); /* Standard syntax */
+	border: 0.2em groove rgb(190, 190, 190);
+	border-radius: 0.3em;
+}
 
-/* Innholdet i hamburgermeny */
-  ul.topnav.responsive {
-    background-color: rgb(26, 26, 26);
-		position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
-	}
-
-  ul.topnav.responsive li {
-    display: block;
-		text-align: left;
-		padding-bottom: 0.3em;
-  }
-
+ul.topnav.responsive li {
+  display: block;
+	text-align: left;
+  font-size: 1em;
+	padding:0.3em;
+	border-bottom: 0.1em ridge rgb(190, 190, 190);
+}
+ul.topnav.responsive li:last-child{
+	border:none;
+}
+ul.topnav.responsive li:hover{
+	background:	rgb(60, 60, 60);
+}
+ul.topnav.responsive li a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+ul.topnav.responsive li ul li{
+	padding-top:0.3em;
+	padding-left: 0.7em;
+	border:none;
+}
+ul.topnav.responsive li ul li:hover{
+	background:	rgb(90, 90, 90);
+}
 
 
 input
@@ -284,20 +297,20 @@ footer p
 
 @media only screen and (min-width: 768px)
 {
-	
+
 }
 
 @media only screen and (min-width: 992px)
 {
-	
+
 }
 
 @media only screen and (min-width: 1200px)
 {
-	
+
 }
 
 @media print
 {
-	
+
 }
