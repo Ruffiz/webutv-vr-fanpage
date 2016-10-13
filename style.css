@@ -343,16 +343,23 @@ footer p
 		color: rgb(0, 0, 0);
 	}
 	
+	aside div > figure:first-child
+	{
+		margin-top: 10px;
+	}
+	
 	aside div figure img
 	{
 		clear: both;
+		margin: 5px;
 	}
 	
 	aside div p
 	{
-		display: block;
-		line-height: 2.5em;
-		font-size: 0.75em;
+		display: inline-block;
+		float: left;
+		line-height: 3em;
+		font-size: 0.65em;
 	}
 	
 	aside div blockquote
