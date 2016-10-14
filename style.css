@@ -67,127 +67,77 @@ h1
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(255, 255, 255, 0.8);
+	padding:0.3rem 0.2rem 0 0.2rem;
 }
 
 nav
 {
-	clear: both;
-	position: relative;
-	width: 100%;
 	background-color: rgb(26, 26, 26);
+	padding: 0.4em;
 }
 
-nav .container
-{
-	padding: 2em;
-}
-
-.mobile /* skal v�re synlig under en viss skjermbredde, sett til none over eks 800px */
-{
-	display: block;
-	margin-top: -1em;
-	margin-left: -1em;
-}
-
-#navbar-toggle /* hamburger menyknapp */
-{
+/* Hamburger ikonet*/
+.icon a{
+	text-decoration: none;
+	color: #f2f2f2;
+	font-size: 2em;
 	position: relative;
-	float: left;
-	width: 34px;
-	height: 34px;
-	background: url(icons/menu-alt.png) center no-repeat;
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 6px;
-	background-size: 100%;
+	border: 1px solid white;
+	border-radius: 0.2em;
+	padding: 0.1em 0.2em;
 }
 
-#navbar-collapse /* skal ikke v�re synlig for mobil */
-/*{
+/* Desktop meny skjules*/
+ul.topnav li {
 	display: none;
-<<<<<<< HEAD
 }
 
-ul
-{
-	list-style: none;
+/* Dropdown menyen */
+ul.topnav.responsive {
+	position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
+	background: rgb(26, 26, 26); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgb(90, 90, 90), rgb(26, 26, 26)); /* Standard syntax */
+	border: 0.2em groove rgb(190, 190, 190);
+	border-radius: 0.3em;
 }
 
-li
-{
-	display: inline-block;
-	float: left;
-}
-
-a 
-{
-  background-color: transparent;
+ul.topnav.responsive li {
   display: block;
+	text-align: left;
+  font-size: 1em;
+	padding:0.3em;
+	border-bottom: 0.1em ridge rgb(190, 190, 190);
 }
-
-a:active, a:hover 
-{
-  outline: 0;
+ul.topnav.responsive li:last-child{
+	border:none;
 }
-
-#search input 
-=======
-}*/
-
-/* Remove margins and padding from the list, and add a black background color */
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+ul.topnav.responsive li:hover{
+	background:	rgb(60, 60, 60);
 }
-
-
-/* Style the links inside the list items */
-ul.topnav li a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.9s;
-    font-size: 17px;
+ul.topnav.responsive li a {
+	text-decoration: none;
+	color: #f2f2f2;
 }
-
-/*@media screen and (max-width:680px) {*/
-  ul.topnav li {display: none;}
-  ul.topnav li.icon {
-    float: left;
-    display: inline-block;
-  }
-/*}*/
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-/*@media screen and (max-width:680px) {*/
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-/*}*/
+ul.topnav.responsive li ul li{
+	padding-top:0.3em;
+	padding-left: 0.7em;
+	border:none;
+}
+ul.topnav.responsive li ul li:hover{
+	background:	rgb(90, 90, 90);
+}
 
 
 input
 {
 	outline: none;
-	margin-right: -1em;
+	/*margin-right: -1em;*/
 }
 
-#search input::-webkit-search-decoration, input::-webkit-search-cancel-button 
+#search input::-webkit-search-decoration, input::-webkit-search-cancel-button
 input[type=search]
 {
 	float: right;
@@ -292,9 +242,14 @@ aside div figure img /* alle img tagger i aside skal v�re ikoner */
 {
 	width: 1.5em;
 	height: 1.5em;
-	margin: 5px;
+	margin: -5px 5px 5px 5px;
 	float: left;
 	border: 1px solid black;
+}
+
+aside div p
+{
+	display: none;
 }
 
 aside section
@@ -335,4 +290,96 @@ footer p
 	font-size: 0.65em;
 	color: rgb(255, 255, 255);
 	background-color: transparent;
+}
+
+@media only screen and (min-width: 580px)
+{
+	aside .container
+	{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+
+}
+
+/* laptop */
+@media only screen and (min-width: 992px)
+{
+	main
+	{
+		width: 100%;
+	}
+	
+	main .container
+	{
+		float: left;
+		width: 730px;
+		border-left: 1px dotted black;
+		border-right:  1px dotted black;
+		margin: 0 auto;
+	}
+	
+	aside 
+	{
+		width: 200px;
+		float: left;
+		background-color: rgb(211,211,211);
+		margin: 0px 10px 10px 10px;
+	}
+	
+	aside .container
+	{
+		width: auto;
+		border: none;
+		margin: 0 auto;
+	}
+	
+	aside section
+	{
+		background-color: transparent;
+		font-size: 0.5rem;
+		color: rgb(0, 0, 0);
+	}
+	
+	aside div > figure:first-child
+	{
+		margin-top: 10px;
+	}
+	
+	aside div figure img
+	{
+		clear: both;
+		margin: 5px;
+	}
+	
+	aside div p
+	{
+		display: inline-block;
+		float: left;
+		line-height: 3em;
+		font-size: 0.65em;
+	}
+	
+	aside div blockquote
+	{
+		clear: both;
+		text-align: left;
+		font-size: 1.3em;
+	}
+
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px)
+{
+
+}
+
+@media print
+{
+
 }
