@@ -317,18 +317,20 @@ footer p
 	main .container
 	{
 		float: left;
-		width: 730px;
+		display: inline-block;
+		width: 650px;
 		border-left: 1px dotted black;
 		border-right:  1px dotted black;
-		margin: 0 auto;
+		margin: 0 auto 0 10%;
 	}
 	
 	aside 
 	{
-		width: 200px;
+		display: inline-block;
+		width: 180px;
 		float: left;
 		background-color: rgb(211,211,211);
-		margin: 0px 10px 10px 10px;
+		margin: 0 auto auto 10px;
 	}
 	
 	aside .container
