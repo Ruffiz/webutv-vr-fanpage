@@ -60,6 +60,12 @@ header
 	src: url(fonts/ABeeZee-Regular.ttf);
 }
 
+@font-face
+{
+	font-family: navFont;
+	src: url(fonts/bitwise.ttf);
+}
+
 h1
 {
 	font-size: 2em;
@@ -319,20 +325,67 @@ footer p
 		display: none;
 	}
 	
-	.topnav
+ 	.topnav
 	{
-		display: inline-block;
+		
 	}
 	 
- 	ul .topnav
+ 	ul.topnav
 	{
-		display: inline-block;
+		list-style: none;
+		position: absolute;
 	}
 	
-	ul .topnav li
+	ul.topnav li
 	{
 		display: inline-block;
 		float: left;
+	}
+	
+	ul.topnav li a
+	{
+		display: block;
+		width: 100px;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		font-family: navFont;
+	}
+	
+	ul.topnav li a ul
+	{
+		display: none;
+		position: absolute;
+	}
+	
+	ul.topnav li a ul li 
+	{
+		display: block;
+		float: none;
+		height: auto;
+	}
+	
+	ul.topnav li:hover ul
+	{
+		display: block;
+	}
+	
+	/* dropdown listeelement, link */
+	ul.topnav li ul li a
+	{
+		
+	}
+	
+		/* dropdown listeelement, link besøkt */
+	ul.topnav li ul li a
+	{
+		
+	}
+	
+	/* dropdown listeelement, link hover */
+	ul.topnav li ul li:hover a
+	{
+		
 	}
 	
 	main
