@@ -325,6 +325,11 @@ footer p
 		display: none;
 	}
 	
+	nav
+	{
+		background-color: rgb(26, 26, 26);
+	}
+	
  	.topnav
 	{
 		
@@ -334,6 +339,9 @@ footer p
 	{
 		list-style: none;
 		position: absolute;
+		margin: 10px auto 0 10%;
+		background-color: inherit;
+		padding: 1em;
 	}
 	
 	ul.topnav li
@@ -352,7 +360,7 @@ footer p
 		font-family: navFont;
 	}
 	
-	ul.topnav li a ul
+	ul.topnav li ul
 	{
 		display: none;
 		position: absolute;
