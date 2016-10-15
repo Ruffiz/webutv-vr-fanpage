@@ -303,12 +303,19 @@ footer p
 
 @media only screen and (min-width: 992px)
 {
-
+	ul.topnav li {
+		display:inline-block;
+	}
 }
 
 @media only screen and (min-width: 1200px)
 {
-
+	ul.topnav li {
+		display:inline-block;
+	}
+	.icon{
+		display:none;
+	}
 }
 
 @media print
