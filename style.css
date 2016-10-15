@@ -328,6 +328,8 @@ footer p
 	nav
 	{
 		background-color: rgb(26, 26, 26);
+		overflow: hidden;
+		padding: 1em;
 	}
 	
  	.topnav
@@ -358,6 +360,7 @@ footer p
 		text-align: center;
 		color: white;
 		font-family: navFont;
+		font-size: 1.3em;
 	}
 	
 	ul.topnav li ul
@@ -370,7 +373,6 @@ footer p
 	{
 		display: block;
 		float: none;
-		height: auto;
 	}
 	
 	ul.topnav li:hover ul
