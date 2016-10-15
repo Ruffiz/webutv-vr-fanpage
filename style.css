@@ -309,6 +309,11 @@ footer p
 /* laptop */
 @media only screen and (min-width: 992px)
 {
+	html
+	{
+		background-image: url(img/bg.jpg);
+	}
+	
  	.icon
 	{
 		display: none;
@@ -322,7 +327,7 @@ footer p
  	ul .topnav
 	{
 		display: inline-block;
-	}*/ 
+	}
 	
 	ul .topnav li
 	{
@@ -333,7 +338,6 @@ footer p
 	main
 	{
 		width: 100%;
-		background-image: url(img/bg.jpg);
 	}
 	
 	main .container
@@ -344,6 +348,7 @@ footer p
 		border-left: 1px dotted black;
 		border-right:  1px dotted black;
 		margin: 0 auto 0 10%;
+		background-color: rgb(255, 255, 255);
 	}
 	
 	aside 
@@ -351,7 +356,6 @@ footer p
 		display: inline-block;
 		width: 180px;
 		float: left;
-		background-color: rgb(211,211,211);
 		margin: 0 auto auto 10px;
 	}
 	
@@ -360,6 +364,7 @@ footer p
 		width: auto;
 		border: none;
 		margin: 0 auto;
+		background-color: rgb(211,211,211);
 	}
 	
 	aside section
