@@ -331,17 +331,12 @@ footer p
 		overflow: hidden;
 		padding: 1em;
 	}
-	
- 	.topnav
-	{
-		
-	}
 	 
  	ul.topnav
 	{
 		list-style: none;
 		position: absolute;
-		margin: 0 auto 0 10%;
+		margin: -1.2em auto 0 10%;
 		background-color: inherit;
 		padding: 1em;
 	}
@@ -352,15 +347,26 @@ footer p
 		float: left;
 	}
 	
+	ul.topnav li #colon
+	{
+		visibility: hidden;
+	}
+	
 	ul.topnav li a
 	{
 		display: block;
-		width: 100px;
+		width: 120px;
 		text-decoration: none;
 		text-align: center;
 		color: white;
 		font-family: navFont;
 		font-size: 1.3em;
+		padding: 0.5em;
+	}
+	
+	ul.topnav li:hover a
+	{
+		background-color: #007726;
 	}
 	
 	ul.topnav li ul
