@@ -341,7 +341,7 @@ footer p
 	{
 		list-style: none;
 		position: absolute;
-		margin: 10px auto 0 10%;
+		margin: 0 auto 0 10%;
 		background-color: inherit;
 		padding: 1em;
 	}
@@ -378,6 +378,8 @@ footer p
 	ul.topnav li:hover ul
 	{
 		display: block;
+		background-color: lightgrey;
+		height: auto;
 	}
 	
 	/* dropdown listeelement, link */
@@ -386,16 +388,16 @@ footer p
 		
 	}
 	
-		/* dropdown listeelement, link besøkt */
-	ul.topnav li ul li a
+	/* dropdown listeelement, link besøkt */
+	ul.topnav li ul li:visited a
 	{
-		
+		color: rgb (0, 0, 0);
 	}
 	
 	/* dropdown listeelement, link hover */
 	ul.topnav li ul li:hover a
 	{
-		
+		background-color: #007726;
 	}
 	
 	main
