@@ -351,11 +351,6 @@ footer p
 		padding: 0.5em;
 	}
 
-	ul.topnav li:hover a
-	{
-		background-color: #007726;
-	}
-
 	ul.topnav li ul
 	{
 		display: none;
@@ -369,17 +364,19 @@ footer p
 
 	ul.topnav li:hover ul
 	{
-		display:block;
-		background-color: lightgrey;
+		display: block;
 		position: absolute;
 	}
-
-	/* dropdown listeelement, link */
+	
 	ul.topnav li ul li a
 	{
-
+		color: rgb(0, 0, 0);
+		background-color: lightgrey;
+		font-family: verdana;
+		font-size: 0.9em;	
+		width: 150%;
 	}
-
+	
 	/* dropdown listeelement, link besøkt */
 	ul.topnav li ul li:visited a
 	{
@@ -388,6 +385,12 @@ footer p
 
 	/* dropdown listeelement, link hover */
 	ul.topnav li ul li:hover a
+	{
+		color: rgb(255, 255, 255);
+		background-color: #007726;
+	}
+	
+	ul.topnav li:hover
 	{
 		background-color: #007726;
 	}
