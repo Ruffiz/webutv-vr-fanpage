@@ -171,13 +171,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
-
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
 	border-radius: 10em;
-
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -188,16 +182,6 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background-color: rgb(255, 255, 255);
 	cursor: auto;
 	padding-left: 32px;
-}
-
-#search input:-moz-placeholder
-{
-	color: transparent;
-}
-
-#search input::-webkit-input-placeholder
-{
-	color: transparent;
 }
 
 main
@@ -329,13 +313,14 @@ footer p
 	{
 		width:100%;
 		background-color: rgb(26, 26, 26);
-		overflow: hidden;
+		/*overflow: hidden;*/
 		padding: 1em;
 		display: block;
 	}
 
  	ul.topnav
-	{	float: left;
+	{
+		float: left;
 		list-style: none;
 		position: relative;
 		margin: -1.2em auto 0 10%;
@@ -477,69 +462,20 @@ footer p
 		position: absolute;
 		bottom: 0;
 	}
-	input
+
+	#search
 	{
-		outline: none;
-		/*margin-right: -1em;*/
+		display: inline-block;
 	}
 
-	#search input::-webkit-search-decoration, input::-webkit-search-cancel-button
-	input[type=search]
-	{
-		position: relative;
-		-webkit-appearance: textfield;
-		-webkit-box-sizing: content-box;
-		font-family: inherit;
-		font-size: 100%;
-	}
-
-	input::-webkit-search-decoration, input::-webkit-search-cancel-button
-	{
-		display: none;
-	}
-
-	#search input[type=search]
-	{
-		float:left;
-		-webkit-appearance: textfield;
-		-webkit-box-sizing: content-box;
-		font-family: inherit;
-		font-size: 100%;
-		width: 15px;
-		color: transparent;
-		cursor: pointer;
-		background: url(icons/search-icon.png) no-repeat 9px center;
-		border: solid 1px rgb(255, 255, 255);
-		padding: 9px 10px 9px 13px;
-
-		-webkit-border-radius: 10em;
-		-moz-border-radius: 10em;
-		border-radius: 10em;
-
-		-webkit-transition: all .5s;
-		-moz-transition: all .5s;
-		transition: all .5s;
-	}
-
-	#search input[type=search]:focus
+	#search input[type]
 	{
 		width: 130px;
 		color: rgb(0, 0, 0);
 		background-color: rgb(255, 255, 255);
 		cursor: auto;
-		padding-left: 32px;
+		float: left;
 	}
-
-	#search input:-moz-placeholder
-	{
-		color: transparent;
-	}
-
-	#search input::-webkit-input-placeholder
-	{
-		color: transparent;
-	}
-
 }
 
 /* desktop */
