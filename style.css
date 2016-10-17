@@ -320,6 +320,7 @@ footer p
 @media only screen and (min-width: 580px)
 {
 	aside .container
+
 {
 	padding-top: 0.5em;
 	padding-bottom: 1em;
@@ -366,7 +367,6 @@ main div.container {
 		float: left;
 		list-style: none;
 		position: relative;
-		/*margin-left: 10%;*/
 		margin: -1.2em auto 0 10%;
 		padding: 1em;
 	}
@@ -451,16 +451,7 @@ main div.container {
 		cursor: auto;
 		float: left;
 		margin: -0.2em 0 0 100%;
-		/*margin-left: 100%;*/
 	}
-	/*#search input[type]
-	{
-		width: 130px;
-		color: rgb(0, 0, 0);
-		background-color: rgb(255, 255, 255);
-		cursor: auto;
-		float: left;
-	}*/
 	main
 	{
 		width: 100%;
@@ -532,7 +523,6 @@ main div.container {
 		position: absolute;
 		bottom: 0;
 	}
-
 
 
 	footer .container
