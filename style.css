@@ -171,13 +171,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
-
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
 	border-radius: 10em;
-
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -188,16 +182,6 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background-color: rgb(255, 255, 255);
 	cursor: auto;
 	padding-left: 32px;
-}
-
-#search input:-moz-placeholder
-{
-	color: transparent;
-}
-
-#search input::-webkit-input-placeholder
-{
-	color: transparent;
 }
 
 main
@@ -404,6 +388,21 @@ footer p
 	ul.topnav li ul li:hover a
 	{
 		background-color: #007726;
+	}
+	
+	#search
+	{
+		display: inline-block;
+		margin-left: 840px;
+	}
+	
+	#search input[type]
+	{
+		width: 130px;
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		cursor: auto;
+		float: left;
 	}
 	
 	main
