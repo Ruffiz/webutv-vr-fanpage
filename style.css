@@ -322,14 +322,18 @@ footer p
 
 main div.container
 {
-		margin: 0 5%;
+		/*margin: 0 5%;*/
 }
 }
 
 @media only screen and (min-width: 768px)
 {
+html
+{
+	/*background-image: url(img/bg.jpg);*/
+}
 main div.container {
-		margin: 0 5%;
+		/*margin: 0 5%;*/
 	}
 }
 
@@ -353,6 +357,7 @@ main div.container {
 		overflow: visible;
 		padding: 1em;
 		display: block;
+
 	}
 
  	ul.topnav
@@ -360,13 +365,13 @@ main div.container {
 		float: left;
 		list-style: none;
 		position: relative;
-		margin: -1.2em auto 0 10%;
-		background-color: inherit;
+		margin-left: 10%;
 		padding: 1em;
 	}
 
 	ul.topnav li
 	{
+		text-align: center;
 		display: inline-block;
 
 	}
@@ -398,7 +403,10 @@ main div.container {
 	{
 		display: block;
 	}
-
+	ul.topnav li:hover {
+		color: rgb(255, 255, 255);
+		background-color: #007726;
+	}
 	ul.topnav li:hover ul
 	{
 		display: block;
@@ -421,7 +429,7 @@ main div.container {
 	}
 
 	/* dropdown listeelement, link hover */
-	ul.topnav li ul li:hover a
+	ul.topnav li ul li a:hover
 	{
 		color: rgb(255, 255, 255);
 		background-color: #007726;
@@ -440,6 +448,7 @@ main div.container {
 		background-color: rgb(255, 255, 255);
 		cursor: auto;
 		float: left;
+		margin-left: 100%;
 	}
 
 	main
@@ -464,6 +473,7 @@ main div.container {
 		width: 180px;
 		float: left;
 		margin: 0 auto auto 10px;
+		background-color: rgb(211,211,211);
 	}
 
 	aside .container
@@ -471,7 +481,6 @@ main div.container {
 		width: auto;
 		border: none;
 		margin: 0 auto;
-		background-color: rgb(211,211,211);
 	}
 
 	aside section
