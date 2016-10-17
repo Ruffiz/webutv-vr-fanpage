@@ -393,6 +393,7 @@ footer p
 	ul.topnav li:hover
 	{
 		background-color: #007726;
+		border-radius: 5px;
 	}
 	
 	#search
@@ -498,11 +499,9 @@ footer p
 /* desktop */
 @media only screen and (min-width: 1200px)
 {
-	ul.topnav li {
-		display:inline-block;
-	}
-	.icon{
-		display:none;
+	main > .container
+	{
+		width: 750px;
 	}
 }
 
