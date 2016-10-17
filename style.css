@@ -408,7 +408,10 @@ footer p
 		background-color: rgb(255, 255, 255);
 		cursor: auto;
 		float: left;
+		margin-left: 100%;
+
 	}
+
 
 	main
 	{
@@ -479,20 +482,6 @@ footer p
 	{
 		position: absolute;
 		bottom: 0;
-	}
-
-	#search
-	{
-		display: inline-block;
-	}
-
-	#search input[type]
-	{
-		width: 130px;
-		color: rgb(0, 0, 0);
-		background-color: rgb(255, 255, 255);
-		cursor: auto;
-		float: left;
 	}
 }
 
