@@ -153,10 +153,10 @@ input[type=search]
 	font-size: 100%;
 }
 
-input::-webkit-search-decoration, input::-webkit-search-cancel-button
+/* input::-webkit-search-decoration, input::-webkit-search-cancel-button
 {
 	display: none;
-}
+} */
 
 #search input[type=search]
 {
@@ -393,7 +393,8 @@ footer p
 	#search
 	{
 		display: inline-block;
-		margin-left: 840px;
+		float: left;
+		/* margin-left: 840px;  	dude, dont even */
 	}
 	
 	#search input[type]
