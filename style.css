@@ -78,12 +78,15 @@ h1
 
 nav
 {
+	width:100%;
 	background-color: rgb(26, 26, 26);
 	padding: 0.4em;
+	overflow: auto;
+	/*display: block;*/
 }
-
 /* Hamburger ikonet*/
 .icon a{
+	float: left;
 	text-decoration: none;
 	color: #f2f2f2;
 	font-size: 2em;
@@ -91,6 +94,7 @@ nav
 	border: 1px solid white;
 	border-radius: 0.2em;
 	padding: 0.1em 0.2em;
+	margin-left: 0.1em;
 }
 
 /* Desktop meny skjules*/
@@ -100,6 +104,7 @@ ul.topnav li {
 
 /* Dropdown menyen */
 ul.topnav.responsive {
+	margin-top: 3em;
 	position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
 	background: rgb(26, 26, 26); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
@@ -117,30 +122,35 @@ ul.topnav.responsive li {
 	padding:0.3em;
 	border-bottom: 0.1em ridge rgb(190, 190, 190);
 }
+
 ul.topnav.responsive li:last-child{
 	border:none;
 }
+
 ul.topnav.responsive li:hover{
 	background:	rgb(60, 60, 60);
 }
+
 ul.topnav.responsive li a {
 	text-decoration: none;
 	color: #f2f2f2;
 }
+
 ul.topnav.responsive li ul li{
-	padding-top:0.3em;
+	padding-top: 0.3em;
 	padding-left: 0.7em;
 	border:none;
 }
+
 ul.topnav.responsive li ul li:hover{
 	background:	rgb(90, 90, 90);
 }
 
-
 input
 {
 	outline: none;
-	/*margin-right: -1em;*/
+	margin: 1em 1em 0 0;
+
 }
 
 #search input::-webkit-search-decoration, input::-webkit-search-cancel-button
@@ -152,11 +162,10 @@ input[type=search]
 	font-family: inherit;
 	font-size: 100%;
 }
-
-/* input::-webkit-search-decoration, input::-webkit-search-cancel-button
+input::-webkit-search-decoration, input::-webkit-search-cancel-button
 {
 	display: none;
-} */
+}
 
 #search input[type=search]
 {
@@ -171,7 +180,13 @@ input[type=search]
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
 	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -182,6 +197,16 @@ input[type=search]
 	background-color: rgb(255, 255, 255);
 	cursor: auto;
 	padding-left: 32px;
+}
+
+#search input:-moz-placeholder
+{
+	color: transparent;
+}
+
+#search input::-webkit-input-placeholder
+{
+	color: transparent;
 }
 
 main
@@ -209,12 +234,6 @@ article
 {
 	margin: 0.5em;
 	font-size: 0.8em;
-	font-color: rgb(255,255,255);
-}
-
-article h2
-{
-	font-color: inherit;
 }
 
 figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil */
@@ -222,10 +241,21 @@ figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil *
 	width: 100%;
 }
 
+#contentprint
+{
+	position: relative;
+	float: right;
+	margin-top: -0.5em;
+	margin-right: -0.5em;
+	height: 25px;
+	width: 25px;
+}
+
 aside
 {
 	width: 100%;
 	background-color: rgb(26, 26, 26);
+	/* padding-bottom: 10px; */
 }
 
 aside div figure img /* alle img tagger i aside skal v�re ikoner */
@@ -274,6 +304,11 @@ footer
 	background-color: rgb(26, 26, 26);
 }
 
+footer .container
+{
+	padding: 0.5em;
+}
+
 footer p
 {
 	padding: 1em;
@@ -285,15 +320,22 @@ footer p
 @media only screen and (min-width: 580px)
 {
 	aside .container
-	{
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-	}
+{
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
 }
 
 @media only screen and (min-width: 768px)
 {
-
+html
+{
+	/*background-image: url(img/bg.jpg);*/
+}
+main div.container {
+		/*margin: 0 5%;*/
+	}
 }
 
 /* laptop */
@@ -313,9 +355,10 @@ footer p
 	{
 		width:100%;
 		background-color: rgb(26, 26, 26);
-		/*overflow: hidden;*/
+		overflow: visible;
 		padding: 1em;
 		display: block;
+
 	}
 
  	ul.topnav
@@ -323,13 +366,14 @@ footer p
 		float: left;
 		list-style: none;
 		position: relative;
+		/*margin-left: 10%;*/
 		margin: -1.2em auto 0 10%;
-		background-color: inherit;
 		padding: 1em;
 	}
 
 	ul.topnav li
 	{
+		/*text-align: center;*/
 		display: inline-block;
 
 	}
@@ -361,7 +405,10 @@ footer p
 	{
 		display: block;
 	}
-
+	ul.topnav li:hover {
+		background-color: #007726;
+		border-radius: 5px;
+	}
 	ul.topnav li:hover ul
 	{
 		display: block;
@@ -384,17 +431,12 @@ footer p
 	}
 
 	/* dropdown listeelement, link hover */
-	ul.topnav li ul li:hover a
+	ul.topnav li ul li a:hover
 	{
 		color: rgb(255, 255, 255);
 		background-color: #007726;
 	}
 
-	ul.topnav li:hover
-	{
-		background-color: #007726;
-		border-radius: 5px;
-	}
 
 	#search
 	{
@@ -408,11 +450,17 @@ footer p
 		background-color: rgb(255, 255, 255);
 		cursor: auto;
 		float: left;
-		margin-left: 100%;
-
+		margin: -0.2em 0 0 100%;
+		/*margin-left: 100%;*/
 	}
-
-
+	/*#search input[type]
+	{
+		width: 130px;
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		cursor: auto;
+		float: left;
+	}*/
 	main
 	{
 		width: 100%;
@@ -435,6 +483,7 @@ footer p
 		width: 180px;
 		float: left;
 		margin: 0 auto auto 10px;
+
 	}
 
 	aside .container
@@ -482,6 +531,13 @@ footer p
 	{
 		position: absolute;
 		bottom: 0;
+	}
+
+
+
+	footer .container
+	{
+		padding: 1em;
 	}
 }
 
