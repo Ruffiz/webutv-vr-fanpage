@@ -403,7 +403,7 @@ main div.container {
 	}
 
 	/* dropdown listeelement, link hover */
-	ul.topnav li ul li:hover
+	ul.topnav li ul li:hover a
 	{
 		color: rgb(255, 255, 255);
 		background-color: #007726;
