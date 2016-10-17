@@ -1,101 +1,143 @@
 <!DOCTYPE html>
 <html lang="no">
-	<head>
-		<meta charset="utf-8">
-		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>VR fanpage</title>
-		<link rel="stylesheet" type="text/css" href="style.css" >
-		<script src="main.js"></script>
-	</head>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!--    <meta name="description" content=""> -->
+<!--    <meta name="author" content=""> -->
 
-	<body>
-		<header>
+    <title>VR fanpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" >
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+<!--    <link href="" rel="stylesheet">-->
+  <script src="main.js"></script>
+	<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+  </head>
+
+  <body>
+	<header>
+		<div class="container">
 			<h1>VR FANPAGE</h1>
-		</header>
+		</div>
+	</header>
 
-		<nav>
-			<div class="icon">
-				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-			</div>
-				<ul class="topnav" id="myTopnav">
-					<li><a href="index.html">Hjem</a></li>
-					<li><a href=#>Demoer<span id="colon">:</span></a>
-						<ul>
-							<li><a href="gaming.html">Gaming</a></li>
-							<li><a href="forskning.html">Forskning og læring</a></li>
-							<li><a href="simulering">Simulering</a></li>
-							<li><a href="film.html">Film</a></li>
-							<li><a href="annet.html">Annet</a></li>
-						</ul>
-					</li>
-					<li><a href="ressurser.html">Ressurser</a></li>
-					<li><a href="kontakt.html">Kontakt</a></li>
-				</ul>
+    <nav>
+		<div class="container">
 			<form id="search">
 				<input type="search" name="searchfield">
 			</form>
-		</nav>
+      <div class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </div>
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href=#>Demoer</a>
+					<ul>
+						<li><a href="gaming.html">Gaming</a></li>
+						<li><a href="forskning.html">Forskning og læring</a></li>
+						<li><a href="simulering">Simulering</a></li>
+						<li><a href="film.html">Film</a></li>
+						<li><a href="annet.html">Annet</a></li>
+					</ul>
+				</li>
+				<li><a href="ressurser.html">Ressurser</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+    </nav>
 
-		<main>
+    <main>
 
+      <div class="container">
+		<h2>Hjem</h2>
+		<article>
+			<h3>VR fanpage</h3>
+			<p>Velkommen til vår fanpage for Virtual Reality. Under 'demoer' vil du finne diverse filmer og artikler som demonstrerer
+				VR's funksjoner og bruksområder. Ressurssiden vil guide deg til andre eksterne kilder som forbindes til utviklerverktøy og
+				andre prosjekter relatert til VR.</p>
+		</article>
+
+		<article>
+			<h3>Demoer</h3>
+			<p>Se hvordan Forsvaret benytter Oculus Rift for å navigere en panservogn med pinlig nøyaktighet.</p>
+			<figure>
+				<img src="" />
+			</figure>
+		</article>
+
+		<article>
+			<h3>Ressurser</h3>
+			<p>Development Kit etc etc etc</p>
+			<figure>
+				<img src="" />
+			</figure>
+		</article>
+
+			<!--<rss version="2.0">
+
+			<channel>
+			  <title>W3Schools Home Page</title>
+			  <link>http://www.w3schools.com</link>
+			  <description>Free web building tutorials</description>
+			  <item>
+			    <title>RSS Tutorial</title>
+			    <link>http://www.w3schools.com/xml/xml_rss.asp</link>
+			    <description>New RSS tutorial on W3Schools</description>
+			  </item>
+			  <item>
+			    <title>XML Tutorial</title>
+			    <link>http://www.w3schools.com/xml</link>
+			    <description>New XML tutorial on W3Schools</description>
+			  </item>
+			</channel>
+
+		</rss>-->
+
+      </div>
+
+    </main>
+
+	<aside>
 		<div class="container">
-		<img id="contentprint" src="icons/print.png">
-			<h2>Hjem</h2>
-			<article>
-				<h3>VR fanpage</h3>
-				<p>Velkommen til vår fanpage for Virtual Reality. Under 'demoer' vil du finne diverse filmer og artikler som demonstrerer
-					VR's funksjoner og bruksområder. Ressurssiden vil guide deg til andre eksterne kilder som forbindes til utviklerverktøy og
-					andre prosjekter relatert til VR.</p>
-			</article>
+			<figure>
+				<img alt="placeholderbilde"src="icons/rss.png" />
+			</figure>
 
-			<article>
-				<h3>Demoer</h3>
-				<p>Se hvordan Forsvaret benytter Oculus Rift for å navigere en panservogn med pinlig nøyaktighet.</p>
-				<figure>
-					<img src="" />
-				</figure>
-			</article>
+			<figure>
+				<img alt="placeholderbilde" src="icons/fb.png" />
+			</figure>
 
-			<article>
-				<h3>Ressurser</h3>
-				<p>Development Kit etc etc</p>
-				<figure>
-					<img src="" />
-				</figure>
-			</article>
+			<figure>
+				<img alt="placeholderbilde" src="icons/insta.png" />
+			</figure>
 
-		  </div>
+			<section>
+				<blockquote cite="http://www.goodreads.com/quotes/tag/virtual-reality">
+					"Emotions - Happiness, anger, jealousy... is the mind experiencing "presence" in our holographic existence."
+				</blockquote>
+			</section>
+		</div>
+	</aside>
 
-		  <aside>
-				<div class="container">
-					<figure>
-						<img alt="placeholderbilde"src="icons/rss.png" />
-					</figure>
-					<p>RSS feed</p>
+	<footer>
+		<div class="container">
+			<p>Copyright 2016</p>
+		</div>
+	</footer>
 
-					<figure>
-						<img alt="placeholderbilde" src="icons/fb.png" />
-					</figure>
-					<p>Facebook</p>
-
-					<figure>
-						<img alt="placeholderbilde" src="icons/insta.png" />
-					</figure>
-					<p>Instagram</p>
-
-					<section>
-						<blockquote cite="http://www.goodreads.com/quotes/tag/virtual-reality">
-							"Emotions - Happiness, anger, jealousy... is the mind experiencing "presence" in our holographic existence."
-						</blockquote>
-					</section>
-				</div>
-			</aside>
-		</main>
-		<footer>
-			<div class="container">
-				<p>Copyright 2016 "Planet Satan"</p>
-			</div>
-		</footer>
-	</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
 </html>

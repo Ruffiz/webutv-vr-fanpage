@@ -1,0 +1,9 @@
+nav, footer, aside {
+	visibility: hidden;
+}
+article {
+	font-family: serif;
+}
+aside div figure img {
+	visibility: hidden;
+}
