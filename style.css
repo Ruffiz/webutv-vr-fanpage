@@ -60,6 +60,12 @@ header
 	src: url(fonts/ABeeZee-Regular.ttf);
 }
 
+@font-face
+{
+	font-family: navFont;
+	src: url(fonts/bitwise.ttf);
+}
+
 h1
 {
 	font-size: 2em;
@@ -247,6 +253,11 @@ aside div figure img /* alle img tagger i aside skal v�re ikoner */
 	border: 1px solid black;
 }
 
+aside div p
+{
+	display: none;
+}
+
 aside section
 {
 	background-color: transparent;
@@ -301,13 +312,173 @@ footer p
 
 }
 
+/* laptop */
 @media only screen and (min-width: 992px)
 {
-	ul.topnav li {
-		display:inline-block;
+	html
+	{
+		background-image: url(img/bg.jpg);
+	}
+
+ 	.icon
+	{
+		display: none;
+	}
+
+	nav
+	{
+		background-color: rgb(26, 26, 26);
+		overflow: hidden;
+		padding: 1em;
+	}
+
+ 	ul.topnav
+	{
+		list-style: none;
+		position: absolute;
+		margin: -1.2em auto 0 10%;
+		background-color: inherit;
+		padding: 1em;
+	}
+
+	ul.topnav li
+	{
+		display: inline-block;
+		float: left;
+	}
+
+	ul.topnav li #colon
+	{
+		visibility: hidden;
+	}
+
+	ul.topnav li a
+	{
+		display: block;
+		width: 120px;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		font-family: navFont;
+		font-size: 1.3em;
+		padding: 0.5em;
+	}
+
+	ul.topnav li:hover a
+	{
+		background-color: #007726;
+	}
+
+	ul.topnav li ul
+	{
+		display: none;
+		position: absolute;
+	}
+
+	ul.topnav li a ul li
+	{
+		display: block;
+		float: none;
+	}
+
+	ul.topnav li:hover ul
+	{
+		display: block;
+		background-color: lightgrey;
+		height: auto;
+	}
+
+	/* dropdown listeelement, link */
+	ul.topnav li ul li a
+	{
+
+	}
+
+	/* dropdown listeelement, link besøkt */
+	ul.topnav li ul li:visited a
+	{
+		color: rgb (0, 0, 0);
+	}
+
+	/* dropdown listeelement, link hover */
+	ul.topnav li ul li:hover a
+	{
+		background-color: #007726;
+	}
+
+	main
+	{
+		width: 100%;
+	}
+
+	main .container
+	{
+		float: left;
+		display: inline-block;
+		width: 650px;
+		border-left: 1px dotted black;
+		border-right:  1px dotted black;
+		margin: 0 auto 0 10%;
+		background-color: rgb(255, 255, 255);
+	}
+
+	aside
+	{
+		display: inline-block;
+		width: 180px;
+		float: left;
+		margin: 0 auto auto 10px;
+	}
+
+	aside .container
+	{
+		width: auto;
+		border: none;
+		margin: 0 auto;
+		background-color: rgb(211,211,211);
+	}
+
+	aside section
+	{
+		background-color: transparent;
+		font-size: 0.5rem;
+		color: rgb(0, 0, 0);
+	}
+
+	aside div > figure:first-child
+	{
+		margin-top: 10px;
+	}
+
+	aside div figure img
+	{
+		clear: both;
+		margin: 5px;
+	}
+
+	aside div p
+	{
+		display: inline-block;
+		float: left;
+		line-height: 3em;
+		font-size: 0.65em;
+	}
+
+	aside div blockquote
+	{
+		clear: both;
+		text-align: left;
+		font-size: 1.3em;
+	}
+
+	footer
+	{
+		position: absolute;
+		bottom: 0;
 	}
 }
 
+/* desktop */
 @media only screen and (min-width: 1200px)
 {
 	ul.topnav li {
