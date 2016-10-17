@@ -367,16 +367,16 @@ footer p
 		display: block;
 		position: absolute;
 	}
-	
+
 	ul.topnav li ul li a
 	{
 		color: rgb(0, 0, 0);
 		background-color: lightgrey;
 		font-family: verdana;
-		font-size: 0.9em;	
+		font-size: 0.9em;
 		width: 150%;
 	}
-	
+
 	/* dropdown listeelement, link besøkt */
 	ul.topnav li ul li:visited a
 	{
@@ -389,18 +389,18 @@ footer p
 		color: rgb(255, 255, 255);
 		background-color: #007726;
 	}
-	
+
 	ul.topnav li:hover
 	{
 		background-color: #007726;
 		border-radius: 5px;
 	}
-	
+
 	#search
 	{
 		display: inline-block;
 	}
-	
+
 	#search input[type]
 	{
 		width: 130px;
@@ -409,7 +409,7 @@ footer p
 		cursor: auto;
 		float: left;
 	}
-	
+
 	main
 	{
 		width: 100%;
