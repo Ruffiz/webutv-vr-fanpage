@@ -78,12 +78,22 @@ h1
 
 nav
 {
+	width:100%;
 	background-color: rgb(26, 26, 26);
 	padding: 0.4em;
+<<<<<<< HEAD
+=======
+	overflow: hidden;
+	/*display: block;*/
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 }
 
 /* Hamburger ikonet*/
 .icon a{
+<<<<<<< HEAD
+=======
+	float: left;
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 	text-decoration: none;
 	color: #f2f2f2;
 	font-size: 2em;
@@ -97,6 +107,7 @@ nav
 ul.topnav li {
 	display: none;
 }
+<<<<<<< HEAD
 
 /* Dropdown menyen */
 ul.topnav.responsive {
@@ -135,12 +146,62 @@ ul.topnav.responsive li ul li{
 ul.topnav.responsive li ul li:hover{
 	background:	rgb(90, 90, 90);
 }
+=======
 
+/* Dropdown menyen */
+ul.topnav.responsive {
+	margin-top: 3em;
+	position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
+	background: rgb(26, 26, 26); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgb(90, 90, 90), rgb(26, 26, 26)); /* Standard syntax */
+	border: 0.2em groove rgb(190, 190, 190);
+	border-radius: 0.3em;
+}
+
+ul.topnav.responsive li {
+  display: block;
+	text-align: left;
+  font-size: 1em;
+	padding:0.3em;
+	border-bottom: 0.1em ridge rgb(190, 190, 190);
+}
+
+ul.topnav.responsive li:last-child{
+	border:none;
+}
+
+ul.topnav.responsive li:hover{
+	background:	rgb(60, 60, 60);
+}
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
+
+ul.topnav.responsive li a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+ul.topnav.responsive li ul li{
+	padding-top: 0.3em;
+	padding-left: 0.7em;
+	border:none;
+}
+
+ul.topnav.responsive li ul li:hover{
+	background:	rgb(90, 90, 90);
+}
 
 input
 {
 	outline: none;
+<<<<<<< HEAD
 	/*margin-right: -1em;*/
+=======
+	margin: 1em 1em 0 0;
+
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 }
 
 #search input::-webkit-search-decoration, input::-webkit-search-cancel-button
@@ -152,8 +213,12 @@ input[type=search]
 	font-family: inherit;
 	font-size: 100%;
 }
+<<<<<<< HEAD
 
 /* input::-webkit-search-decoration, input::-webkit-search-cancel-button
+=======
+input::-webkit-search-decoration, input::-webkit-search-cancel-button
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 {
 	display: none;
 } */
@@ -171,6 +236,12 @@ input[type=search]
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
+<<<<<<< HEAD
+=======
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 	border-radius: 10em;
 	transition: all .5s;
 }
@@ -209,17 +280,30 @@ article
 {
 	margin: 0.5em;
 	font-size: 0.8em;
+<<<<<<< HEAD
 	font-color: rgb(255,255,255);
 }
 
 article h3
 {
 	font-color: inherit;
+=======
 }
 
 figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil */
 {
 	width: 100%;
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
+}
+
+#contentprint
+{
+	position: relative;
+	float: right;
+	margin-top: -0.5em;
+	margin-right: -0.5em;
+	height: 25px;
+	width: 25px;
 }
 
 #contentprint
@@ -300,16 +384,18 @@ footer p
 
 @media only screen and (min-width: 580px)
 {
-	aside .container
-	{
-		padding-top: 0.5em;
-		padding-bottom: 1em;
-	}
+
+main div.container
+{
+		margin: 0 5%;
+}
 }
 
 @media only screen and (min-width: 768px)
 {
-
+main div.container {
+		margin: 0 5%;
+	}
 }
 
 /* laptop */
@@ -329,7 +415,11 @@ footer p
 	{
 		width:100%;
 		background-color: rgb(26, 26, 26);
+<<<<<<< HEAD
 		/*overflow: hidden;*/
+=======
+		overflow: visible;
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 		padding: 1em;
 		display: block;
 	}
@@ -343,6 +433,7 @@ footer p
 		background-color: inherit;
 		padding: 1em;
 	}
+<<<<<<< HEAD
 
 	ul.topnav li
 	{
@@ -355,6 +446,20 @@ footer p
 		visibility: hidden;
 	}
 
+=======
+
+	ul.topnav li
+	{
+		display: inline-block;
+
+	}
+
+	ul.topnav li #colon
+	{
+		visibility: hidden;
+	}
+
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 	ul.topnav li a
 	{
 		display: block;
@@ -406,11 +511,14 @@ footer p
 		background-color: #007726;
 	}
 
+<<<<<<< HEAD
 	ul.topnav li:hover
 	{
 		background-color: #007726;
 		border-radius: 5px;
 	}
+=======
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 
 	#search
 	{
@@ -497,11 +605,14 @@ footer p
 		bottom: 0;
 	}
 
+<<<<<<< HEAD
 	#search
 	{
 		display: inline-block;
 	}
 
+=======
+>>>>>>> 407baec17c9e175773b25585d35a316cf19cac40
 	#search input[type]
 	{
 		width: 130px;
