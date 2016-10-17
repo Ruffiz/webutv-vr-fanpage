@@ -370,11 +370,6 @@ main div.container {
 		padding: 0.5em;
 	}
 
-	ul.topnav li:hover a
-	{
-		background-color: #007726;
-	}
-
 	ul.topnav li ul
 	{
 		display: none;
@@ -388,15 +383,17 @@ main div.container {
 
 	ul.topnav li:hover ul
 	{
-		display:block;
-		background-color: lightgrey;
+		display: block;
 		position: absolute;
 	}
 
-	/* dropdown listeelement, link */
 	ul.topnav li ul li a
 	{
-
+		color: rgb(0, 0, 0);
+		background-color: lightgrey;
+		font-family: verdana;
+		font-size: 0.9em;
+		width: 150%;
 	}
 
 	/* dropdown listeelement, link besøkt */
@@ -408,7 +405,15 @@ main div.container {
 	/* dropdown listeelement, link hover */
 	ul.topnav li ul li:hover
 	{
+		color: rgb(255, 255, 255);
 		background-color: #007726;
+	}
+
+
+	ul.topnav li:hover
+	{
+		background-color: #007726;
+		border-radius: 5px;
 	}
 
 	#search
@@ -502,11 +507,9 @@ main div.container {
 /* desktop */
 @media only screen and (min-width: 1200px)
 {
-	ul.topnav li {
-		display:inline-block;
-	}
-	.icon{
-		display:none;
+	main > .container
+	{
+		width: 750px;
 	}
 }
 
