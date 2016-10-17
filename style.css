@@ -395,8 +395,6 @@ footer p
 	#search
 	{
 		display: inline-block;
-		float: left;
-		/* margin-left: 840px;  	dude, dont even */
 	}
 	
 	#search input[type]
