@@ -50,14 +50,12 @@ header
 @font-face
 {
 	font-family: headTitle;
-	color: rgba(255, 255, 255, 0.2);
 	src: url(fonts/flipside.ttf);
 }
 
 @font-face
 {
 	font-family: headPage;
-	color: color: rgb(38, 38 , 38);
 	src: url(fonts/ABeeZee-Regular.ttf);
 }
 
@@ -333,6 +331,7 @@ footer p
 {
 	html
 	{
+<<<<<<< HEAD
 		background-image: url(img/bg.jpg);
 	}
 	
@@ -363,6 +362,13 @@ footer p
 	{
 		bottom: 0;
 		position: absolute;
+=======
+	/*background-image: url(img/bg.jpg);*/
+	}
+	main div.container
+	{
+		/*margin: 0 5%;*/
+>>>>>>> styling
 	}
 }
 
@@ -454,7 +460,7 @@ footer p
 	/* dropdown listeelement, link besøkt */
 	ul.topnav li ul li:visited a
 	{
-		color: rgb (0, 0, 0);
+		color: black;
 	}
 
 	/* dropdown listeelement, link hover */
@@ -559,8 +565,8 @@ footer p
 	{
 		padding: 1em;
 	}
-}
 
+}
 /* desktop */
 @media only screen and (min-width: 1200px)
 {
@@ -568,7 +574,7 @@ footer p
 	{
 		width: 750px;
 	}
-	
+
 	#search input[type]
 	{
 		margin: -0.2em 0 0 140%;
