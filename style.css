@@ -152,15 +152,6 @@ input
 
 }
 
-#search input::-webkit-search-decoration, input::-webkit-search-cancel-button
-input[type=search]
-{
-	float: right;
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
 input::-webkit-search-decoration, input::-webkit-search-cancel-button
 {
 	display: none;
@@ -333,7 +324,7 @@ footer p
 	{
 		background-image: url(img/bg.jpg);
 	}
-	
+
 	main .container
 	{
 		width: 75%;
@@ -342,13 +333,13 @@ footer p
 		margin: 0 auto 0 auto;
 		background-color: rgb(255, 255, 255);
 	}
-	
+
 	aside
 	{
 		bottom: 2.3em;
 		position: absolute;
 	}
-	
+
 	aside .container
 	{
 		clear: both;
@@ -356,7 +347,7 @@ footer p
 		background-color: rgb(26, 26, 26);
 		border: none;
 	}
-	
+
 	footer
 	{
 		bottom: 0;
