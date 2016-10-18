@@ -630,6 +630,12 @@ footer p
 	{
 		margin: -0.2em 0 0 0;
 	}
+	
+	video
+	{
+		height: 500px;
+	}
+	
 	iframe
 	{
 		width:100%;
@@ -648,6 +654,12 @@ footer p
 	{
 		margin: -0.2em 0 0 0;
 	}
+	
+	video
+	{
+		height: 600px;
+	}
+	
 	iframe
 	{
 		width:100%;
