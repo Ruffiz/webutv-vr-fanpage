@@ -450,7 +450,8 @@ main div.container {
 		background-color: rgb(255, 255, 255);
 		cursor: auto;
 		float: left;
-		margin: -0.2em 0 0 100%;
+		margin: -0.2em 0 0 60%;
+		-webkit-box-sizing: border-box;
 	}
 	main
 	{
@@ -506,8 +507,10 @@ main div.container {
 	aside div p
 	{
 		display: inline-block;
-		float: left;
-		line-height: 3em;
+		width: 75%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		line-height: 1;
 		font-size: 0.65em;
 	}
 
@@ -537,6 +540,11 @@ main div.container {
 	main > .container
 	{
 		width: 750px;
+	}
+	
+	#search input[type]
+	{
+		margin: -0.2em 0 0 140%;
 	}
 }
 
