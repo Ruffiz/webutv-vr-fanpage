@@ -345,7 +345,7 @@ footer p
 {
 	html
 	{
-		background-image: url(img/bg.jpg);
+		background-image: url(img/bg.png);
 		background-size: 100vw 100vh;
 	}
 
@@ -387,6 +387,11 @@ footer p
 /* laptop */
 @media only screen and (min-width: 992px)
 {
+	html
+	{
+		background-size: cover;
+	}
+	
  	.icon
 	{
 		display: none;
