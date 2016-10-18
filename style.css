@@ -365,7 +365,11 @@ footer p
 	{
 		overflow: scroll;
 	} */
-
+	
+	video {
+		height: 350px;
+	}
+	
 	aside
 	{
 		bottom: 2.3em;
