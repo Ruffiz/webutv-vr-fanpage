@@ -332,12 +332,15 @@ footer p
 
 @media only screen and (min-width: 580px)
 {
+	html
+	{
+		background-size: 100vh 100vw;
+	}
 	aside .container
-
-{
-	padding-top: 0.5em;
-	padding-bottom: 1em;
-}
+	{
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+	}
 
 }
 
@@ -346,7 +349,7 @@ footer p
 	html
 	{
 		background-image: url(img/bg.jpg);
-		background-size: 100vw 100vh;
+		background-size: cover;
 	}
 
 	main .container
@@ -489,6 +492,7 @@ footer p
 		float: left;
 		margin: -0.2em 0 0 60%;
 		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 	}
 	main
 	{
@@ -582,7 +586,7 @@ footer p
 
 	#search input[type]
 	{
-		margin: -0.2em 0 0 140%;
+		margin: -0.2em 0 0 0;
 	}
 }
 
@@ -595,7 +599,7 @@ footer p
 
 	#search input[type]
 	{
-		margin: -0.2em 0 0 250%;
+		margin: -0.2em 0 0 0;
 	}
 }
 
@@ -608,6 +612,6 @@ footer p
 
 	#search input[type]
 	{
-		margin: -0.2em 0 0 490%;
+		margin: -0.2em 0 0 0;
 	}
 }
