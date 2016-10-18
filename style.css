@@ -331,7 +331,6 @@ footer p
 {
 	html
 	{
-<<<<<<< HEAD
 		background-image: url(img/bg.jpg);
 	}
 	
@@ -362,13 +361,6 @@ footer p
 	{
 		bottom: 0;
 		position: absolute;
-=======
-	/*background-image: url(img/bg.jpg);*/
-	}
-	main div.container
-	{
-		/*margin: 0 5%;*/
->>>>>>> styling
 	}
 }
 
