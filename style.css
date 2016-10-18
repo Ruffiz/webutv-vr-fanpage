@@ -209,6 +209,7 @@ main .container
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 1em;
+	position: relative;
 }
 
 main h2
@@ -352,21 +353,21 @@ footer p
 	main .container
 	{
 		width: 75%;
-		max-height: 457px;
+		/* max-height: 457px; */
 		border-left: 1px dotted black;
 		border-right:  1px dotted black;
 		margin: 0 auto 0 auto;
 		background-color: rgb(255, 255, 255);
 	}
-	#maindiv
+/* 	#maindiv
 	{
 		overflow: scroll;
-	}
+	} */
 
 	aside
 	{
 		bottom: 2.3em;
-		position: absolute;
+		/* position: absolute; */
 	}
 
 	aside .container
@@ -380,7 +381,7 @@ footer p
 	footer
 	{
 		bottom: 0;
-		position: absolute;
+		/* position: absolute; */
 	}
 }
 
@@ -562,7 +563,7 @@ footer p
 	footer
 	{
 		bottom: 0;
-		position: absolute;
+	/* 	position: absolute; */
 	}
 
 
