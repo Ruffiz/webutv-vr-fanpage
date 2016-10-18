@@ -231,6 +231,29 @@ figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil *
 	width: 100%;
 }
 
+.demoHeader {
+	text-align:center;
+	font:italic 16px Copperplate;
+}
+
+#demoMainHeader {
+	text-align:center;
+}
+
+.h3Cont {
+	text-align:center;
+}
+
+video {
+	width:100%; 
+	height:250;
+}
+
+iframe {
+	width:100%;
+	height:250px;
+}
+
 #contentprint
 {
 	position: relative;
