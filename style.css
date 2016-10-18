@@ -331,12 +331,38 @@ footer p
 
 @media only screen and (min-width: 768px)
 {
-html
-{
-	/*background-image: url(img/bg.jpg);*/
-}
-main div.container {
-		/*margin: 0 5%;*/
+	html
+	{
+		background-image: url(img/bg.jpg);
+	}
+	
+	main .container
+	{
+		width: 75%;
+		border-left: 1px dotted black;
+		border-right:  1px dotted black;
+		margin: 0 auto 0 auto;
+		background-color: rgb(255, 255, 255);
+	}
+	
+	aside
+	{
+		bottom: 2.3em;
+		position: absolute;
+	}
+	
+	aside .container
+	{
+		clear: both;
+		position: relative;
+		background-color: rgb(26, 26, 26);
+		border: none;
+	}
+	
+	footer
+	{
+		bottom: 0;
+		position: absolute;
 	}
 }
 
