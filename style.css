@@ -565,7 +565,28 @@ footer p
 	}
 }
 
-@media print
+@media only screen and (min-width: 1400px)
 {
+	main > .container
+	{
+		width: 900px;
+	}
+	
+	#search input[type]
+	{
+		margin: -0.2em 0 0 250%;
+	}
+}
 
+@media only screen and (min-width: 1600px)
+{
+	main > .container
+	{
+		width: 1200px;
+	}
+	
+	#search input[type]
+	{
+		margin: -0.2em 0 0 490%;
+	}
 }
