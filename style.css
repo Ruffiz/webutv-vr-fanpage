@@ -222,6 +222,7 @@ article
 {
 	margin: 0.5em;
 	font-size: 0.8em;
+	margin-bottom: 1em;
 }
 
 figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil */
@@ -231,7 +232,9 @@ figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil *
 
 .demoHeader {
 	text-align:center;
-	font:italic 16px Copperplate;
+	font: 1.2em Copperplate;
+	font-weight: bold;
+	font-style: italic;
 }
 
 #demoMainHeader {
