@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>VR fanpage</title>
+  <link>http://#</link>
+  <description>Website for VR entusiaster</description>
+  <item>
+    <title>Gaming</title>
+    <link>http://#</link>
+    <description>VR tar et skritt videre (literally)</description>
+  </item>
+  <item>
+    <title>Forskning og læring</title>
+    <link>http://#</link>
+    <description>VR tar et skritt videre (literally)</description>
+  </item>
+  <item>
+    <title>Simulering</title>
+    <link>http://#</link>
+    <description>VR tar et skritt videre (literally)</description>
+  </item>
+  <item>
+    <title>Film</title>
+    <link>http://#</link>
+    <description>VR tar et skritt videre (literally)</description>
+  </item>
+  <item>
+    <title>Annet</title>
+    <link>http://#</link>
+    <description>VR tar et skritt videre (literally)</description>
+  </item>
+</channel>
+
+</rss>
