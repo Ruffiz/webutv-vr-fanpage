@@ -365,11 +365,11 @@ footer p
 	{
 		overflow: scroll;
 	} */
-	
+
 	video {
 		height: 350px;
 	}
-	
+
 	aside
 	{
 		bottom: 2.3em;
@@ -519,6 +519,16 @@ footer p
 		background-color: rgb(255, 255, 255);
 	}
 
+	iframe
+	{
+		width:100%;
+		height:400px;
+	}
+	video
+	{
+		width:100%;
+		height:400px;
+	}
 	aside
 	{
 		display: inline-block;
@@ -596,6 +606,16 @@ footer p
 	#search input[type]
 	{
 		margin: -0.2em 0 0 0;
+	}
+	iframe
+	{
+		width:100%;
+		height:450px;
+	}
+	video
+	{
+		width:100%;
+		height:450px;
 	}
 }
 
