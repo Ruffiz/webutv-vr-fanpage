@@ -246,8 +246,8 @@ figure > img /* alle img tagger under figure skal v�re fullbredde p� mobil *
 }
 
 video {
-	width:100%;
-	height:250;
+	width: 100%;
+	height: 250px;
 }
 
 iframe {
