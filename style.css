@@ -346,15 +346,21 @@ footer p
 	html
 	{
 		background-image: url(img/bg.jpg);
+		background-size: cover;
 	}
 
 	main .container
 	{
 		width: 75%;
+		max-height: 457px;
 		border-left: 1px dotted black;
 		border-right:  1px dotted black;
 		margin: 0 auto 0 auto;
 		background-color: rgb(255, 255, 255);
+	}
+	#maindiv
+	{
+		overflow: scroll;
 	}
 
 	aside
@@ -381,11 +387,6 @@ footer p
 /* laptop */
 @media only screen and (min-width: 992px)
 {
-	html
-	{
-		background-image: url(img/bg.jpg);
-	}
-
  	.icon
 	{
 		display: none;
