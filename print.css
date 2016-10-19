@@ -7,3 +7,15 @@ article {
 aside div figure img {
 	visibility: hidden;
 }
+video {
+	display: none !important;
+}
+iframe {
+	display: none;
+}
+.h3Cont {
+	display: none;
+}
+.demoHeader {
+	display: none;
+}
