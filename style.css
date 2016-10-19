@@ -344,6 +344,12 @@ footer p
 	{
 		background-size: 100vh 100vw;
 	}
+	
+	aside
+	{
+		bottom: 2.3em;
+	}
+	
 	aside .container
 	{
 		padding-top: 0.5em;
@@ -381,7 +387,6 @@ footer p
 	aside
 	{
 		bottom: 2.3em;
-		/* position: absolute; */
 	}
 
 	aside .container
