@@ -110,11 +110,8 @@ ul.topnav li {
 ul.topnav.responsive {
 	margin-top: 3em;
 	position: absolute;  /* Gjør at hamburgermeny blir dropdownmeny */
-	background: rgb(26, 26, 26); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, rgb(26, 26, 26), rgb(90, 90, 90)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, rgb(90, 90, 90), rgb(26, 26, 26)); /* Standard syntax */
+	background: rgb(26, 26, 26); /* hvis browser ikke støtter gradient */
+	background: linear-gradient(-90deg, rgb(90, 90, 90), rgb(26, 26, 26));
 	border: 0.2em groove rgb(190, 190, 190);
 	border-radius: 0.3em;
 }
@@ -157,16 +154,11 @@ input
 
 }
 
-input::-webkit-search-decoration, input::-webkit-search-cancel-button
-{
-	display: none;
-}
-
 #search input[type=search]
 {
 	float: right;
 	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 	font-family: inherit;
 	font-size: 100%;
 	width: 15px;
@@ -175,13 +167,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background: url(icons/search-icon.png) no-repeat 9px center;
 	border: solid 1px rgb(255, 255, 255);
 	padding: 9px 10px 9px 13px;
-
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
 	border-radius: 10em;
-
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -192,16 +178,6 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button
 	background-color: rgb(255, 255, 255);
 	cursor: auto;
 	padding-left: 32px;
-}
-
-#search input:-moz-placeholder
-{
-	color: transparent;
-}
-
-#search input::-webkit-input-placeholder
-{
-	color: transparent;
 }
 
 main
@@ -498,8 +474,6 @@ footer p
 		color: rgb(255, 255, 255);
 		background-color: #007726;
 	}
-
-
 	#search
 	{
 		display: inline-block;
@@ -513,9 +487,9 @@ footer p
 		cursor: auto;
 		float: left;
 		margin: -0.2em 0 0 60%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
+	
 	main
 	{
 		width: 100%;
